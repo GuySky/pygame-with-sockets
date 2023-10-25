@@ -1,6 +1,7 @@
 import pygame, random, math
 from pygame.locals import *
 
+'''The engine was inspired by DaFluffyPotate, go subscribe to him: https://www.youtube.com/@DaFluffyPotato'''
 
 def collision_test(object, object_list):
     collisions = []
@@ -11,7 +12,7 @@ def collision_test(object, object_list):
 
 
 class PhysicsEntity:
-    'Физика для каждого объекта'
+    'Physics'
 
     def __init__(self, e_type, pos, size):
         self.x, self.y = pos
@@ -24,10 +25,10 @@ class PhysicsEntity:
     
     def update(self, movement):
         
-        entity_rect = self.rect()
+        #entity_rect = self.rect()
         self.x += (movement['right'] - movement['left']) * self.movement_step
 
-        entity_rect = self.rect()
+        #entity_rect = self.rect()
         self.y += (movement['down'] - movement['up']) * self.movement_step
 
     def render(self, surf, color):
@@ -35,15 +36,3 @@ class PhysicsEntity:
     
     def getObjData(self):
         return {'x': self.x, 'y': self.y, 'width': self.width, 'height': self.height, 'type': self.type}
-
-
-class Utils:
-
-    def init(self):
-        pass
-
-    def load_image(self, path):
-        pass
-
-    def load_sfct(self, path):
-        pass
