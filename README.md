@@ -1,4 +1,4 @@
-#Pygame with sockets
+#Pygame with sockets#
 
 This repo was created spontaneously for researchers like me to get started with such pointless ideas as **sockets with pygame**!
 The engine was code is based on [DaFluffyPotato's](https://www.youtube.com/@DaFluffyPotato) videos, please go subscribe to him.
